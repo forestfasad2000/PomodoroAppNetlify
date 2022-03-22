@@ -10,8 +10,8 @@
 <body>
     <div class="app">
         <main class="main" id="main">
-            <h1>Pomodoro Timer</h1>
-            <div id="container">
+            <h2>Pomodoro Timer</h2>
+            <div class="container" id="container">
                 <p id="work" class="label">Work:</p><p id="break" class="label">Break:</p><p id="cycles" class="label">Cycles:</p>
                 <!--Work Timer-->
                 <div id="work-timer" class="timer">
@@ -28,6 +28,30 @@
                 <button id="start" class="btn">Start</button>
                 <button id="stop" class="btn">Pause</button>
                 <button id="reset" class="btn">Reset</button>
+            </div>
+
+            <h2>Contact Form</h2>
+            <div class="container">
+                <form name="contact" method="POST" data-netlify="true">
+                    <p>
+                      <label>Your Name: <input type="text" name="name" /></label>   
+                    </p>
+                    <p>
+                      <label>Your Email: <input type="email" name="email" /></label>
+                    </p>
+                    <p>
+                      <label>Your Role: <select name="role[]" multiple>
+                        <option value="leader">Leader</option>
+                        <option value="follower">Follower</option>
+                      </select></label>
+                    </p>
+                    <p>
+                      <label>Message: <textarea name="message"></textarea></label>
+                    </p>
+                    <p>
+                      <button type="submit">Send</button>
+                    </p>
+                  </form>
             </div>
         </main>
     </div>
